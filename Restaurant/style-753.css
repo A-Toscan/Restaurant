@@ -1,0 +1,128 @@
+/*********** TABLET **************/
+
+@media (min-width: 753px){
+
+/*********** CAVECERA ***********/
+
+	.cabecera h2 {
+		font-size: 30px;
+	}
+
+/********** MENU ************/
+	
+	.menu {
+		position: static;
+		background-color: transparent;
+		padding: 0px;
+		margin-right: 20px;
+		transition: 0s;
+	}
+	 .fa-bars {
+		display: none;
+	}
+	.menu ul {
+		display: flex;
+		justify-content: flex-end;
+	}
+	.menu a {
+		font-size: 16px;
+		display: block;
+		padding: 20px 20px 10px;
+		color: white;
+	}
+	.menu li {
+		border-bottom: none;
+	}
+	.menu li:first-of-type {
+		border-bottom: solid 2px white;
+	}
+	.menu li:hover {
+		border-bottom: solid 2px white;
+	}
+
+/*********** MAIN ************/
+
+	.section {
+		width: 45%;
+		padding: 0px 10px;
+	}
+	.photos img {
+		width: 180px;
+		margin: 10px;	
+	}
+	.main {
+		display: flex;
+		margin: auto;
+		justify-content: center;
+		padding: 50px 0px;
+	}
+	.main p {
+		font-size: 16px;
+	}
+
+/********* CREDITS ***********/
+
+	.parrafos {
+		width: 100%;
+		padding: 20px 10px;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.recensione {
+		width: 250px;
+		height: 300px;
+	}
+	
+/********* GALERIA *********/
+
+	.galeria {
+		/*margin: 10px;*/
+		cursor: pointer;
+		padding: 20px;
+		text-align: center;
+	}
+	.zoomin {
+		margin: 20px auto;
+		overflow: hidden;
+		width: 600px;
+		height: 500px;
+	}
+	
+/********** FINAL *************/
+
+	
+	.final {
+		padding: 0px 20px;
+		/*display: flex;
+		margin: auto;
+		justify-content: space-around;*/
+		
+	}
+	.final h3 {
+		margin-bottom: 20px;
+	}
+	.final p {
+		margin-bottom: 20px;
+	}
+	.final p:last-of-type {
+		margin-bottom: 30px;
+	}
+	.carrers {
+		padding: 0px 10px;
+		width: 45%;
+		align-items: flex-start;
+		margin-bottom: 30px;
+	}
+	.imagenes {
+		padding: 0px;
+		/*width: 50%;*/
+		align-items:flex-end;
+		
+	}
+	.imagenes img {
+		
+		width: 100%;
+	}
+	
+}

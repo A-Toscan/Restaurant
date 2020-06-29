@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Antonio Toscano - UF1305.019 -11 - PROVA</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Antonio Toscano">
+	<meta name="description" content="Pagina Web, Porva numero 11 UF1305.019 - 11">
+	<meta name="keywords" content="Gastronomia, restoracion, cooking, dine out, comida">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style-753.css">
+	<link rel="stylesheet" type="text/css" href="style-980.css">
+	<link rel="stylesheet" type="text/css" href="style-1024.css">
+</head>
+<body>
+<header>
+	<div class="cabecera">
+		<h2><a href="#">METIANE</a></h2>
+		<label for="chkmenu"><i class="fas fa-bars"></i></label>
+		<input type="checkbox" id="chkmenu">
+		<nav class="menu">
+			<label for="chkmenu" id="X"><i class="fas fa-bars" id="bars"></i></label>
+			<ul>
+				<li><a href="#">GALLERY</a></li>
+				<li><a href="#">PRICING</a></li>
+				<li><a href="#">CONTACTS</a></li>
+			</ul>
+		</nav>
+		<div class="titulo">
+			<h1 onclick="cambia()">Title of Your Product,<br> Service or Event</h1>
+			<h3 onclick="cambio()">IT'S A TAG LINE, WHERE YOU CAN WRITE A KEY POINT OF YOUR IDEA.</h3>
+			<a href="#" class="button">CALL2ACTION</a>
+		</div>
+	</div>
+</header>
+	<script>
+			var titulo=document.querySelector("h1");
+			function cambia(){
+				titulo.innerHTML=prompt("cambia il titulo");
+			}
+			var subtitulo=document.querySelector("h3");
+			function cambio(){
+				subtitulo.innerHTML=prompt("cambia il titulo");
+			}
+	</script>
+	<div class="main" onclick="colorare()" ondblclick="ritorna()">
+		<div class="section">
+			<h2>A Mix of Traditional and Modern Cuisine</h2>
+			<p>While we stay true to the traditional recipes and the relaxed atmosphere, our restaurant also aspires to constantly add fusion-style.</p>
+			<p>Our family has been in the restaurant business for a very long time. Nowadays we can proudly boast our reputation for a well known Italian restaurant in our area. We are famous for the fabulous authentic cuisine, professional chef and dedicated staff. Choose any dish from the menu which can help you to experience the real taste of Italy.</p>
+		</div>
+		<div class="photos">
+			<img src="img/s1img1.jpg" alt="bistecca">
+			<img src="img/s1img2.jpg" alt="hamburguer">
+		</div>
+	</div>
+	<script>
+		var clicca=document.querySelector(".main");
+		function colorare(){
+			clicca.style.backgroundColor="orange";
+		}
+		function ritorna(){
+			clicca.style.backgroundColor="white";
+		}
+	</script>
+	<section class="fotocentrale">
+		<div class="central">
+			<h2>TELL YOUR VISITORS ABOUT TIME LIMITED OFFER.
+				IT WILL RAISE THE CONVERSION!</h2>
+			<a class="button" onclick="nomove()">CALL2ACTION</a>
+		</div>
+	</section>
+	<script>
+		var stop=document.querySelector(".fotocentrale");
+		function nomove(){
+			stop.style.backgroundAttachment="scroll";
+		}
+	</script>
+	<section class="credits">
+		<div class="testa">
+			<h2>Peolpe Believe Other People</h2>
+			<h3>LET YOUR VISITORS KNOW ABOUT YOUR HAPPY CUSTOMERS</h3>
+		</div>
+		<div class="parrafos">
+			<figure class="recensione">
+				<img src="img/comillas.png" alt="comillas">
+				<p onclick="review(0)" class="parra">I’ve been eating their business lunches for the past 7 years. Not even once have I had any unpleasant experience.</p>
+				<h3>John Doe</h3>
+				<h4>ONE OF HAPPY CUSTOMER</h4>
+			</figure>
+			<figure class="recensione">
+				<img src="img/comillas.png" alt="comillas">
+				<p onclick="review(1)" class="parra">The prices are as good as the menu! Each time I spend less money, than anywhere else and get a fresh, homemade dinner!</p>
+				<h3>Tina White</h3>
+				<h4>ONE OF HAPPY CUSTOMER</h4>
+			</figure>
+			<figure class="recensione">
+				<img src="img/comillas.png" alt="comillas">
+				<p onclick="review(2)" class="parra">My friends, who go here every week highly recommended this place to me. But it’s totally worth it!</p>
+				<h3>Sara Peter</h3>
+				<h4>ONE OF HAPPY CUSTOMER</h4>
+			</figure>
+		</div>
+	</section>
+	<script>
+		var scrivi=document.querySelectorAll(".parra");
+
+		function review(i){
+			scrivi[i].innerHTML=prompt("escribe una crítica");
+		}
+	</script>
+	<section class="prodotti">
+		<div class="titoli">
+			<h2>Showcase Your Product,<br> Service or Event</h2>
+			<p>INSERT SOME TASTY IMAGES OF WHAT YOUR ARE TRYING TO PROMOTE HERE.</p>
+		</div>
+		<div class="galeria">
+			<div class="zoomin">
+				<img onclick="abrirModal(1)" src="img/galeria1.jpg">
+			</div>
+			<div class="zoomin">
+				<img onclick="abrirModal(2)" src="img/galeria2.jpg">
+			</div>
+			<div class="zoomin">
+				<img onclick="abrirModal(3)" src="img/galeria3.jpg">
+			</div>
+			<div class="zoomin">
+				<img onclick="abrirModal(4)" src="img/galeria4.jpg">
+			</div>
+			<div class="zoomin">
+				<img onclick="abrirModal(5)" src="img/galeria5.jpg">
+			</div>
+			<div class="zoomin">
+				<img onclick="abrirModal(6)" src="img/galeria6.jpg">
+			</div>
+		</div>
+		<div class="contenedorModal">
+			<!-- <div class="modal">
+				<div class="cerrar">X</div>
+				<button onclick="anterior()">&lt;</button><img src="img/galeria1.jpg" alt="galeria"><button onclick="siguiente()">&gt;</button>
+			</div> -->
+		</div>
+	</section>
+		<script>
+			var contenedorModal=document.querySelector(".contenedorModal");
+			function abrirModal(n){
+				contenedorModal.innerHTML='<div class="modal"><div class="cerrar"><span onclick="cerrarModal()">X</span></div><button onclick="anterior()">&lt;</button><img src="'+ 'img/galeria' + n + '.jpg"><button onclick="siguiente()">&gt;</button></div>';
+			}
+			function cerrarModal(){
+				contenedorModal.innerHTML="";
+			}
+		</script>
+<section class="final">
+	<div class="carrers">
+			<h2>Your Career Starts Here</h2>
+			<h3>FIND PEOPLE FOR YOUR PROJECT</h3>
+			<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters</p>
+		
+		<div class="carrer1">
+			<h2>Senior Job Position</h2>
+			<p>We're looking for experienced professionals with personal point of view and problem-solving technique.</p>
+		</div>
+		<div class="carrer2">
+			<h2>Middle Job Position</h2>
+			<p>There are a few "hot" vacancies in our company. Don;t miss your chance and send your CV.</p>
+		</div>
+		<a class="button" onclick="otrafoto()">CONTACT US</a>
+	</div>
+	<div class="imagenes">
+			<img src="img/s5img1.jpg" alt="cocinero" id="imagennueva">
+	</div>
+	</div>
+	<script>
+		var imagennueva=document.getElementById("imagennueva");
+		function otrafoto(){
+			imagennueva.src="img/nosotros.jpg";
+		}
+	</script>
+</section>
+<footer>
+	<div class="social">
+		<a href="#" class="fab fa-facebook"></a>
+		<a href="#" class="fab fa-twitter"></a>
+		<a href="#" class="fab fa-google-plus"></a>
+		<a href="#" class="fab fa-pinterest"></a>
+		<a href="#" class="fab fa-instagram"></a>
+	</div>
+	<div class="copy">
+		<p><small>Copyrights &copy; 2015 | All rights reserved.</small></p>
+	</div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+/********** MOVIL ************/
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Permanent+Marker&display=swap');
+:root {
+	--orange: #fe562e;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body, h2 {
+	font-family: 'Abril Fatface', cursive;
+}
+
+/********* CABEZERA-HEADER ***********/
+
+.cabecera {
+	background-image: linear-gradient(rgba(0,0,0,0.05),rgba(0,0,0,0.5)),url(img/cabecera.jpg);
+	background-repeat: no-repeat;
+	background-position: right;
+	background-size: cover;
+	position: relative;
+}
+.cabecera h2 {
+	text-align: center;
+	color: white;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 24px;
+	font-weight: lighter;
+	padding: 16px 10px 10px;
+	text-decoration: none;
+	position: absolute;
+	top: 15px;
+	left: 20px;
+}
+.cabecera a {
+	text-decoration: none;
+	color: white
+}
+
+/*********** MENU *************/
+
+#chkmenu {
+	display: none;
+}
+#chkmenu:checked + .menu {
+	transition: 1s;
+	right: 0px;
+}
+.fa-bars {
+	color: var(--orange);
+	background-color: white;
+	padding: 10px;
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+#bars {
+	position: absolute;
+	background-color: var(--orange);
+	top: 30px;
+	right: 30px;
+	color: white;
+}
+.menu {
+	background-color: var(--orange);
+	position: fixed;
+	z-index: 100;
+	width: 200px
+	height: 800px;
+	top: 0px;
+	bottom: 160px;
+	right: -300px;
+	padding: 50px 50px 50px 10px;
+	border-radius: 80px 0px 0px 80px;
+	transition: 1s;
+}
+.menu li {
+	list-style: none;
+	border-bottom: solid 1px white;
+	padding: 20px 0px;
+	color: white; 
+	font-family: 'Raleway', sans-serif;
+}
+.menu li:last-of-type {
+	border-bottom: none;
+}
+.menu a {
+	text-decoration: none;
+	color: white;
+	font-size: 16px;	
+}
+
+/************ TITULO CAVECERA **********/
+
+.titulo {
+	text-align: center;
+	color: white;
+	padding: 100px 20px;
+}
+.titulo h1 {
+	font-family: 'Abril Fatface', cursive;
+	color: white;
+	letter-spacing: 3px;
+	font-size: 46px;
+	padding: 30px;
+}
+.titulo h3 {
+	font-family: sans-serif;
+	color: var(--orange);
+	font-weight: lighter;
+	font-size: 16px;
+	margin: 50px 20px;
+	line-height: 30px;
+}
+.button {
+	padding: 16px 40px;
+	background-color: var(--orange);
+	border: solid 2px var(--orange);
+	border-radius: 50px;
+	font-family: sans-serif;
+}
+.button:hover {
+	color: white;
+	background-color: transparent;
+	border: solid 2px white;
+	transition: 1s;
+}
+
+/********** MAIN **************/
+
+.main {
+	padding: 50px 20px;
+}
+.section {
+	padding: 20px 0px 30px;
+}
+.main h2 {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 32px;
+	margin-bottom: 30px;
+	font-weight: lighter;
+}
+.main p {
+	font-family: sans-serif;
+	color: grey;
+	margin-bottom: 16px;
+}
+.photos {
+	text-align: center;
+}
+.photos img {
+	width: 400px;
+	margin-bottom: 20px;
+}
+
+/********* FOTO CENTRAL ***********/
+
+.fotocentrale {
+	background-image: url(img/s2.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.central {
+	text-align: center;
+	padding: 80px 50px;
+}
+.central h2 {
+	font-family: 'Permanent Marker', cursive;
+	color: white;
+	font-weight: lighter;
+	font-size: 20px;
+	margin-bottom: 50px;
+}
+.central a {
+	text-decoration: none;
+	color: white
+}
+
+/************** CREDITS ***************/
+
+.credits {
+	background-color: beige;
+	padding: 20px
+}
+.testa {
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+.testa h2 {
+	font-size: 32px;
+	font-weight: lighter;
+	margin-bottom: 20px;	
+}
+.testa h3 {
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 14px;
+	color: grey;
+}
+.recensione {
+	padding: 10px;
+}
+.recensione p {
+	color: grey;
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 16px;
+	margin: 20px 0px;
+}
+.recensione h3 {
+	font-weight: lighter;
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+.recensione h4 {
+	font-weight: lighter;
+	font-family: sans-serif;
+	font-size: 16px;
+	color: grey;
+}
+
+/********* GALERIA *********/
+
+.prodotti {
+	padding: 20px;
+	text-align: center;
+}
+.prodotti h2 {
+	font-size: 32px;
+	font-weight: lighter;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+.prodotti p {
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 14px;
+	color: grey;
+	margin-bottom: 30px;
+}
+.galeria {
+	cursor: pointer;
+	padding: 20px;
+	text-align: center;
+}
+.zoomin {
+	margin: 20px auto;
+	overflow: hidden;
+	width: 350px;
+	height: 250px;
+}
+.zoomin img {
+	width: 100%;
+}
+.zoomin img:hover {
+	transform: scale(1.1);
+	opacity: 0.8;
+	filter: brightness(50%);
+	transition: 1s;
+}
+
+/********** MODAL ************/
+
+.modal {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	z-index: 1000;
+	background-color: rgba(0,0,0,0.8);
+	color: white;
+	text-align: center;
+}
+.cerrar {
+	text-align: right;
+	font-size: 20px;
+	margin: 20px;
+}
+.modal img {
+	width: 80%;
+}
+/********** FINAL *************/
+
+.final {
+	padding: 20px;
+	justify-content: center;
+}
+.final h2 {
+	font-size: 32px;
+	font-weight: lighter;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+.final h3 {
+	font-family: sans-serif;
+	font-weight: lighter;
+	font-size: 18px;
+	margin-bottom: 50px;
+	color: grey;
+}
+.final p {
+	font-family: sans-serif;
+	font-weight: lighter;
+	color: grey;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+.imagenes img {
+	width: 100%;
+	margin: 30px 0px;
+	justify-content: center;
+}
+.final a {
+	border: solid var(--orange) 2px;
+	text-decoration: none;
+	color: white;
+}
+.final a:hover {
+	transition: 1s;
+	border: solid rgba(0, 0, 0, 0.3) 2px;
+	color: black;
+}
+footer {
+	text-align: center;
+	padding: 20px;
+}
+.social a {
+	border: solid 0px transparent;
+	border-radius: 100%;
+	text-decoration: none;
+	color: var(--orange);
+	font-size: 16px;
+	padding: 10px;
+}
+.social a:hover {
+	transition: 1s;
+	background-color: var(--orange);
+	border: solid 0px var(--orange);
+	color: white;
+}
+.copy {
+	padding-top: 10px;
+}
+.copy p {
+	font-family: sans-serif;
+	font-weight: lighter;
+	color: grey;
+}

@@ -1,0 +1,38 @@
+/********* DESKTOP ********/
+@media (min-width: 1024px){
+
+
+/********** MAIN **************/
+
+	.main {
+		padding: 50px 20px;
+		display: flex;
+		justify-content: center;
+		
+	}
+	.section {
+		padding: 0px;
+	}
+	.photos {
+		display: flex;
+		margin: auto;
+		justify-content: center;
+		width: 45%;
+	}
+	.photos img {
+		width: 250px;	
+	}
+
+/************** CREDITS ***************/
+
+	.testa h2 {
+		font-size: 46px;
+		font-weight: lighter;
+		margin-bottom: 20px;	
+	}
+	.recensione {
+		padding: 20px;
+		width: 30%;
+	}
+
+}

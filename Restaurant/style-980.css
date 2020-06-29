@@ -1,0 +1,114 @@
+/******** LAPTOP ************/
+
+@media (min-width: 980px){
+
+/******** CABEZERA-HEADER ***********/
+
+	.cabecera h2 {
+		font-size: 28px;
+	}
+
+/************ TITULO CAVECERA **********/
+
+	.titulo h1 {
+		font-size: 60px;
+	}
+	.titulo h3 {
+		font-size: 24px;
+	}
+
+/********** MAIN **************/
+
+	.main {
+		padding: 100px 0px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.main h2 {
+		font-size: 40px;
+	}
+	.section {
+		margin: auto;
+		padding: 0px 30px;
+	}
+	.photos {
+		display: flex;
+		margin: auto;
+		justify-content: center;
+		width: 45%;
+	}
+	.photos img {
+		width: 250px;	
+	}
+
+/************** CREDITS ***************/
+
+	.testa h2 {
+		font-size: 42px;
+		font-weight: lighter;
+		margin-bottom: 20px;	
+	}
+	.recensione {
+		padding: 20px;
+		width: 30%;
+	}
+
+/********* GALERIA *********/
+
+	.prodotti {
+		padding: 20px;
+	}
+	.galeria {
+		margin: 10px;
+		cursor: pointer;
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.zoomin {
+		margin: 20px auto;
+		overflow: hidden;
+		width: 400px;
+		height: 400px;
+	}
+
+/********** FINAL *************/
+
+	.final {
+		padding: 0px 20px;
+		display: flex;
+		margin: auto;
+		justify-content: space-around;
+		
+	}
+	.final h2:first-of-type {
+		font-size: 36px;
+	}
+	.final h3 {
+		margin-bottom: 20px;
+	}
+	.final p {
+		margin-bottom: 20px;
+	}
+	.final p:last-of-type {
+		margin-bottom: 30px;
+	}
+	.carrers {
+		padding: 0px 10px;
+		width: 45%;
+		align-items: flex-start;
+		margin-bottom: 30px;
+	}
+	.imagenes {
+		padding: 0px;
+		width: 50%;
+		align-items:flex-end;
+		
+	}
+	.imagenes img {
+		width: 100%;
+	}
+
+}
